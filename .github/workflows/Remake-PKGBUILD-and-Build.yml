@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependecies
         run: |
           sudo apt update
-          sudo apt dist-upgrade
+          # sudo apt dist-upgrade
           sed -i ':a;$!N;s/\n/ /;ta;' dependecies-install.list
           sudo apt-fast install -y $(cat dependecies-install.list)
           
