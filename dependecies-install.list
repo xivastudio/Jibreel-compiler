@@ -1,2 +1,3 @@
-build-essential cmake xpto
+build-essential
+cmake
 
