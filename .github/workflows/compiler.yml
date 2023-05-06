@@ -32,9 +32,3 @@ jobs:
           if [ -n "$(git commit -m "new version" -a | grep "nothing to commit")" ];then exit 0; fi
           git push
 
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ github.ref }}
-
