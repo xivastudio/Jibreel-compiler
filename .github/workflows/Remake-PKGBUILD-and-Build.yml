@@ -7,10 +7,6 @@ on:
     #branches: [ "master", "main", "*" ]
     # branches: [ "*" ]
     
-  # repository_dispatch:
-    # types:
-      # - '**'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,8 +16,10 @@ jobs:
       - name: Install Dependecies
         run: |
           sudo apt update
+          sed -i 's/$/ \\/' dependecies-install.list
+          sed -i '$ s/\\//' dependecies-install.list
           sudo apt-fast install -y \
-          cmake
+          $(cat dependecies-install.list)
           
       # Tmate ##
       - name: Setup tmate session
