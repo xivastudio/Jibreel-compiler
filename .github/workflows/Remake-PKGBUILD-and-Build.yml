@@ -18,9 +18,9 @@ jobs:
           sudo apt update
           # sed -i 's/$/ \\/' dependecies-install.list
           # sed -i '$ s/\\//' dependecies-install.list
+          sed -i ':a;$!N;s/\n/ /;ta;' dependecies-install.list
           # cat dependecies-install.list
-          sudo apt-fast install -y \
-          $(cat dependecies-install.list)
+          sudo apt-fast install -y $(cat dependecies-install.list)
           
       # Tmate ##
       - name: Setup tmate session
