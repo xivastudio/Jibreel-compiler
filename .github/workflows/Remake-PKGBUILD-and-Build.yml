@@ -1,4 +1,4 @@
-name: Jibreel Compiler
+name: Compiler
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
     # branches: [ "*" ]
     
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,10 +16,8 @@ jobs:
       - name: Install Dependecies
         run: |
           sudo apt update
-          # sed -i 's/$/ \\/' dependecies-install.list
-          # sed -i '$ s/\\//' dependecies-install.list
+          sudo apt dist-upgrade
           sed -i ':a;$!N;s/\n/ /;ta;' dependecies-install.list
-          # cat dependecies-install.list
           sudo apt-fast install -y $(cat dependecies-install.list)
           
       # Tmate ##
