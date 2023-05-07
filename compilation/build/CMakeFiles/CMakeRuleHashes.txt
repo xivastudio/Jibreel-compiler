@@ -1,0 +1,9 @@
+# Hashes of file build rules.
+a520e5c2efbb84b80106599f6d2f3019 /home/runner/work/Jibreel-compiler/Jibreel-compiler/corectrl/src/translations/lang_en_EN.qm
+1b3222c431079fc39aa3ffbfb9f08f2d /home/runner/work/Jibreel-compiler/Jibreel-compiler/corectrl/src/translations/lang_pt_BR.qm
+0fba335b1145b4989b5b7bdac6eaf28e CMakeFiles/uninstall
+3b1f34b2da127597bf33bde2ad7b42f1 src/CMakeFiles/corectrl_lib_autogen
+53c60e2853e8ec0ef9f482b9374bf49f src/CMakeFiles/translations
+1e4efa4a7130eae41db30bb54b3f2c92 src/helper/CMakeFiles/corectrl_helper_autogen
+ab5d4a611db68aad2f2e51becb4f2de4 src/helper/CMakeFiles/corectrl_helperkiller_autogen
+fbe8c1353e2d55ea5d8f80ff645d0299 src/qrc_resources.cpp
