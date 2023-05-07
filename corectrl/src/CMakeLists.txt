@@ -311,14 +311,7 @@ list (APPEND TRANSLATABLE_FILES
 
 list(APPEND TRANSLATIONS
   translations/lang_en_EN.ts
-  translations/lang_es_ES.ts
-  translations/lang_ru_RU.ts
-  translations/lang_fr_FR.ts
-  translations/lang_ca_ES.ts
-  translations/lang_bg_BG.ts
-  translations/lang_cs_CZ.ts
-  translations/lang_nl_NL.ts
-  translations/lang_de_DE.ts
+  translations/lang_pt_BR.ts
 )
 
 set_source_files_properties(${TRANSLATIONS} PROPERTIES
