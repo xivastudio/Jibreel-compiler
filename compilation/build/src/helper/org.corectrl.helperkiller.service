@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.corectrl.helperkiller
+Exec=/home/runner/work/Jibreel-compiler/Jibreel-compiler/compilation/corectrl-bin/libexec/corectrl/corectrl_helperkiller
+User=root
