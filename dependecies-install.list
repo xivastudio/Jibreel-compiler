@@ -21,7 +21,6 @@ libdbus-1-dev
 cargo
 clang
 debhelper-compat
-just
 libclang-dev
 libpipewire-0.3-dev
 pkg-config
